@@ -1,1 +1,1 @@
-export {};
+export {bem} from './bem';

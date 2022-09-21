@@ -24,7 +24,6 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
-
   },
   globals: {
     Atomics: 'readonly',
@@ -51,6 +50,7 @@ module.exports = {
     'react/display-name': 'off', // TODO: possible redundant
     'react/prop-types': 'off', // TODO: possible redundant
     'spaced-comment': ['warn', 'always', {markers: ['/']}],
+    'react-hooks/exhaustive-deps': 'off',
     '@typescript-eslint/indent': ['warn', 2, {flatTernaryExpressions: true, SwitchCase: 1}],
     '@typescript-eslint/no-unused-vars': ['warn', {vars: 'all', args: 'after-used', ignoreRestSiblings: true}],
     '@typescript-eslint/ban-types': ['warn'],
@@ -64,7 +64,7 @@ module.exports = {
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
       },
       {
         selector: ['property'],
@@ -88,6 +88,6 @@ module.exports = {
       },
     ],
     'import/newline-after-import': 'error',
-    'import/no-default-export': 'warn'
+    'import/no-default-export': 'warn',
   },
 };

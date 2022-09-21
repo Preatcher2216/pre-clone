@@ -1,0 +1,105 @@
+@import 'assets/styles/reusable';
+
+.select {
+  position: relative;
+  width: 100%;
+
+  &__selected {
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    justify-content: space-between;
+    transition: 300ms;
+
+    &_opened {
+      border: 1px solid var(--accent);
+      outline: 1px solid var(--accent);
+    }
+  }
+
+  &__value {
+    width: calc(100% - 54px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.32px;
+    font-size: 18px;
+  }
+
+  &__arrow {
+    transition: 300ms;
+
+    &_opened {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border: 1px solid var(--secondaryLightest);
+    box-shadow: 0px 2.4px 4.8px var(--secondaryLightest), 0px 8px 24px var(--secondaryLightest);
+    border-radius: 6px;
+    z-index: 100;
+  }
+
+  &__options {
+    overflow: auto;
+    padding: 0 11px 0 16px;
+    margin-right: 5px;
+    min-height: 56px;
+    max-height: 392px;
+
+    @extend .scrollbar;
+  }
+
+  &__search {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 14px 16px 15px;
+    border-bottom: 1px solid var(--bgDarker);
+
+    &_focused {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 14px;
+    }
+
+    input {
+      flex-grow: 10;
+      height: 100%;
+      background: none;
+      border: none;
+      letter-spacing: -0.32px;
+      font-size: 18px;
+
+      &::placeholder {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  &__option {
+    height: 56px;
+    line-height: 56px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    letter-spacing: -0.32px;
+    font-size: 18px;
+    color: var(--primaryLight);
+    border-bottom: 1px solid var(--bgDarker);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
