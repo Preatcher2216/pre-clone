@@ -10,12 +10,12 @@ CRA Starter Kit
 
 
 ## Roadmap
-- [ ] Задокументировать все примеры где это необходимо
-- [ ] Сделать примеры компонентов в папке shared
-- [ ] Сделать примеры для разграничения роутинга по ролям
-- [ ] Добавить пример с мульти лейаутом
-- [ ] Добавить пример по работе со стилями
-- [ ] Добавить докер файл и базовый конфиг nginx
+- [ ] Задокументировать все примеры где это необходимо ([JIM-68](https://youtrack.inostudio.net/issue/JIM-68))
+- [ ] Сделать примеры компонентов в папке shared ([JIM-69](https://youtrack.inostudio.net/issue/JIM-69))
+- [ ] Сделать примеры для разграничения роутинга по ролям ([JIM-70](https://youtrack.inostudio.net/issue/JIM-70))
+- [ ] Добавить пример с мульти лейаутом ([JIM-71](https://youtrack.inostudio.net/issue/JIM-71))
+- [ ] Добавить пример по работе со стилями ([JIM-72](https://youtrack.inostudio.net/issue/JIM-72))
+- [ ] Добавить докер файл и базовый конфиг nginx ([JIM-73](https://youtrack.inostudio.net/issue/JIM-73))
 
 ## Cтек
 - typescript
